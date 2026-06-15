@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "locale": "en_GB",
+  "platform": "4.4.1",
+  "metadata": {
+    "appmode": "static",
+    "primary_rmd": null,
+    "primary_html": "Accident and Emergency XGBoost Model.qmd",
+    "content_category": null,
+    "has_parameters": false
+  },
+  "packages": null,
+  "files": {
+    "Databricks/A&E/.posit/publish/A&E-52RF.toml": {
+      "checksum": "e6f0dcbf4ef375943f2ee56063901593"
+    },
+    "Databricks/A&E/.posit/publish/A&E-R2EE.toml": {
+      "checksum": "bcb889f1c2ad6caae07f6a8bf6fbb22d"
+    },
+    "Databricks/A&E/.posit/publish/A&E-TT8V.toml": {
+      "checksum": "4515e3d9a3563607351a2a6f49aa80fe"
+    },
+    "Databricks/A&E/.posit/publish/AE XGBoost Posit Connect-GDL3.toml": {
+      "checksum": "669d3b19fc72ebbb73d6b02281a697b6"
+    },
+    "Databricks/A&E/.posit/publish/AE XGBoost Posit Connect-HTPE.toml": {
+      "checksum": "88db78380f5d9c2c5db3ca2dc41cffff"
+    },
+    "Databricks/A&E/.posit/publish/AE XGBoost Posit Connect-JPRR.toml": {
+      "checksum": "d0f5ea5bbee8691646567ab4cba5df64"
+    },
+    "Databricks/A&E/.posit/publish/AE XGBoost Posit Connect Test-VT1V.toml": {
+      "checksum": "a796b8c7ac4082438b03a463d69f81fe"
+    },
+    "Databricks/A&E/.posit/publish/deployments/deployment-6JUV.toml": {
+      "checksum": "0d2cc4d0d31ddcc081b1a6c071890605"
+    },
+    "Databricks/A&E/.posit/publish/deployments/deployment-8MRD.toml": {
+      "checksum": "a1ce206c48257d627498bf74b7fdcdb6"
+    },
+    "Databricks/A&E/.posit/publish/deployments/deployment-91MM.toml": {
+      "checksum": "dbbd748ed2f6f5c35d17355c7c1acf10"
+    },
+    "Databricks/A&E/.posit/publish/deployments/deployment-ATNE.toml": {
+      "checksum": "2855f61ec811b7a859eaf4bf01045067"
+    },
+    "Databricks/A&E/.posit/publish/deployments/deployment-OVRD.toml": {
+      "checksum": "1ce5ac75e18648cb75f82ad4f2f98967"
+    },
+    "Databricks/A&E/.posit/publish/deployments/deployment-Q6HA.toml": {
+      "checksum": "c80a7a68d5949b93071f1484482aea24"
+    },
+    "Databricks/A&E/.posit/publish/deployments/deployment-TIEJ.toml": {
+      "checksum": "10348fa582d90c659493c2de095a68f5"
+    },
+    "Databricks/A&E/AE XGBoost Posit Connect.qmd": {
+      "checksum": "51781298ab6a5fe18e72cfa32987fb64"
+    },
+    "Databricks/ae outputs/combined_future_forecasts.xlsx": {
+      "checksum": "a1e2d274c8a8817fb9f39f8a2afd61ee"
+    },
+    "Databricks/ae outputs/future_forecast_output_no_trees_1000.xlsx": {
+      "checksum": "dae54389320a1fb930f4ef21329df695"
+    },
+    "Databricks/ae outputs/future_forecast_output_no_trees_10000.xlsx": {
+      "checksum": "fab96d688aaff51ec6b16592d8c5f482"
+    },
+    "Databricks/ae outputs/future_forecast_output_no_trees_2000.xlsx": {
+      "checksum": "774cfdece9d115043b653332bd763aa9"
+    },
+    "Databricks/ae outputs/future_forecast_output_no_trees_500.xlsx": {
+      "checksum": "1995a9810c7ac87cd4f86713884686e6"
+    },
+    "Databricks/ae outputs/future_forecast_output_no_trees_5000.xlsx": {
+      "checksum": "3b7d5b85cbf7355e987ebe44b4b2da54"
+    },
+    "Databricks/ae outputs/future_forecast_output_yes_trees_1000.xlsx": {
+      "checksum": "dc998d056954bfa132d2b21d3469ee4b"
+    },
+    "Databricks/ae outputs/future_forecast_output_yes_trees_10000.xlsx": {
+      "checksum": "acce4f4b219a56a7850d11acd6ac91c8"
+    },
+    "Databricks/ae outputs/future_forecast_output_yes_trees_2000.xlsx": {
+      "checksum": "e726a03eab9f3c5d3b702752ff26685a"
+    },
+    "Databricks/ae outputs/future_forecast_output_yes_trees_500.xlsx": {
+      "checksum": "8d9944d37b8e282e8d253965dbaa62be"
+    },
+    "Databricks/ae outputs/future_forecast_output_yes_trees_5000.xlsx": {
+      "checksum": "fe45047ae9e15835ee2879785742b4dc"
+    },
+    "Databricks/ae outputs/hospital_model_performance_no.xlsx": {
+      "checksum": "f000db1d5155a517e8d08b8514dce91a"
+    },
+    "Databricks/ae outputs/hospital_model_performance_yes.xlsx": {
+      "checksum": "ff21708996a2dd8e263770b17d3c3afc"
+    },
+    "README.md": {
+      "checksum": "647ad4e41a68b79dcf029ada9dd07107"
+    },
+    "requirements.txt": {
+      "checksum": "23e70eca1a02c8cf2597d2436969c587"
+    }
+  },
+  "users": null
+}
