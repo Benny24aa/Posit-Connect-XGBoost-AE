@@ -82,6 +82,7 @@ library(data.table)
 library(writexl)
 library(rsconnect)
 library(quarto)
+library(rmarkdown)
 
 rsconnect::writeManifest()
 
