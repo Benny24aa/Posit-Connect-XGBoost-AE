@@ -85,9 +85,6 @@ library(quarto)
 library(rmarkdown)
 library(knitr)
 
-renv::init()
-renv::install(c("rmarkdown", "knitr"))
-renv::snapshot()
 
 #### SETUP
 
