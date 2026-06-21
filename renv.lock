@@ -1250,6 +1250,27 @@
       ],
       "Hash": "ac107251d9d9fd72f0ca8049988f1d7f"
     },
+    "httr2": {
+      "Package": "httr2",
+      "Version": "1.2.2",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "R6",
+        "cli",
+        "curl",
+        "glue",
+        "lifecycle",
+        "magrittr",
+        "openssl",
+        "rappdirs",
+        "rlang",
+        "vctrs",
+        "withr"
+      ],
+      "Hash": "c20959a9442c0e3adb1e8d3809c5d1f7"
+    },
     "ipred": {
       "Package": "ipred",
       "Version": "0.9-15",
@@ -2067,13 +2088,13 @@
     },
     "renv": {
       "Package": "renv",
-      "Version": "1.0.11",
+      "Version": "1.2.3",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
         "utils"
       ],
-      "Hash": "47623f66b4e80b3b0587bc5d7b309888"
+      "Hash": "1bd9f58e1cfe27ce035933937c6f03de"
     },
     "reshape2": {
       "Package": "reshape2",
@@ -2147,7 +2168,7 @@
     },
     "rsconnect": {
       "Package": "rsconnect",
-      "Version": "1.5.0",
+      "Version": "1.10.0",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -2156,6 +2177,7 @@
         "cli",
         "curl",
         "digest",
+        "httr2",
         "jsonlite",
         "lifecycle",
         "openssl",
@@ -2168,7 +2190,7 @@
         "utils",
         "yaml"
       ],
-      "Hash": "43ac7d36cea2d468918e604c9e823e80"
+      "Hash": "494cfaf6aa847972c52a274a7d9c6562"
     },
     "rstatix": {
       "Package": "rstatix",
@@ -2195,10 +2217,10 @@
     },
     "rstudioapi": {
       "Package": "rstudioapi",
-      "Version": "0.17.1",
+      "Version": "0.19.0",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "5f90cd73946d706cfe26024294236113"
+      "Hash": "db86914207e4e0f112b60ebbc3e1793c"
     },
     "sass": {
       "Package": "sass",
