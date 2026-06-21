@@ -570,26 +570,42 @@ write_xlsx(
 }
 
 if (combine_results == TRUE) {
-  
-  
+
+  cat("Combining results...\n")
+
   files <- list.files(
-  path = output_dir,
+    path = output_dir,
     pattern = "^future_forecast_output_.*\\.xlsx$",
     full.names = TRUE
   )
-  
- combined_forecast <- files %>%
-  set_names() %>%
-  map_dfr(~ readxl::read_excel(.x), .id = "source_file")
 
+  cat("Files found:", length(files), "\n")
+  print(basename(files))
 
-write_xlsx(
-  combined_forecast,
-file.path(
-  output_dir,
-  "combined_future_forecasts.xlsx"
-)
-)
+  combined_forecast <- files %>%
+    set_names() %>%
+    purrr::map_dfr(
+      ~ readxl::read_excel(.x),
+      .id = "source_file"
+    )
+
+  cat("Combined rows:", nrow(combined_forecast), "\n")
+
+  combined_file <- file.path(
+    output_dir,
+    "combined_future_forecasts.xlsx"
+  )
+
+  writexl::write_xlsx(
+    combined_forecast,
+    combined_file
+  )
+
+  cat(
+    "Combined file exists:",
+    file.exists(combined_file),
+    "\n"
+  )
 
 }
 
