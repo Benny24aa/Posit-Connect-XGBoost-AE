@@ -8,10 +8,9 @@ format:
 ---
 
 ```{r}
+
 knitr::opts_chunk$set(
   echo = FALSE,
-  include = FALSE,
-  results = "hide",
   message = FALSE,
   warning = FALSE
 )
