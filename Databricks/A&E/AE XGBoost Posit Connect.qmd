@@ -518,19 +518,33 @@ future_forecast_output <- future_forecast_output %>%
     Respiratory_Condition = resp_condition
   )
 
-write_xlsx(
-  future_forecast_output,
-  file.path(
-    output_dir,
-    paste0(
-      "future_forecast_output_",
-      tolower(resp_condition),
-      "_trees_",
-      trees_n,
-      ".xlsx"
-    )
-  )
+# write_xlsx(
+#   future_forecast_output,
+#   file.path(
+#     output_dir,
+#     paste0(
+#       "future_forecast_output_",
+#       tolower(resp_condition),
+#       "_trees_",
+#       trees_n,
+#       ".xlsx"
+#     )
+#   )
+# )
+
+outfile <- paste0(
+  "Databricks/ae outputs/future_forecast_output_",
+  tolower(resp_condition),
+  "_trees_", trees_n,
+  ".xlsx"
 )
+
+cat("Working directory:", getwd(), "\n")
+cat("Writing:", outfile, "\n")
+
+write_xlsx(future_forecast_output, outfile)
+
+cat("File exists:", file.exists(outfile), "\n")
 }
 
 model_performance_df <- dplyr::bind_rows(model_performance)
