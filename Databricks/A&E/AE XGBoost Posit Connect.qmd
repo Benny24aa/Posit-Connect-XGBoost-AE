@@ -569,12 +569,12 @@ write_xlsx(
 )
 }
 
-if (combine_results == TRUE) {
+if (combine_results) {
 
-  cat("Combining results...\n")
+  forecast_dir <- "Databricks/ae outputs"
 
   files <- list.files(
-    path = output_dir,
+    path = forecast_dir,
     pattern = "^future_forecast_output_.*\\.xlsx$",
     full.names = TRUE
   )
@@ -582,31 +582,35 @@ if (combine_results == TRUE) {
   cat("Files found:", length(files), "\n")
   print(basename(files))
 
-  combined_forecast <- files %>%
-    set_names() %>%
-    purrr::map_dfr(
+  if (length(files) > 0) {
+
+    combined_forecast <- purrr::map_dfr(
+      files,
       ~ readxl::read_excel(.x),
       .id = "source_file"
     )
 
-  cat("Combined rows:", nrow(combined_forecast), "\n")
+    combined_file <- file.path(
+      forecast_dir,
+      "combined_future_forecasts.xlsx"
+    )
 
-  combined_file <- file.path(
-    output_dir,
-    "combined_future_forecasts.xlsx"
-  )
+    writexl::write_xlsx(
+      combined_forecast,
+      combined_file
+    )
 
-  writexl::write_xlsx(
-    combined_forecast,
-    combined_file
-  )
+    cat(
+      "Combined file exists:",
+      file.exists(combined_file),
+      "\n"
+    )
 
-  cat(
-    "Combined file exists:",
-    file.exists(combined_file),
-    "\n"
-  )
+  } else {
 
+    cat("No forecast files found to combine\n")
+
+  }
 }
 
 ```
