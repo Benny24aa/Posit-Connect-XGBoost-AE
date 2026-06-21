@@ -57,7 +57,7 @@ print(status_code(r))
 
 ```
 
-```{r}
+```{r_done}
 library(data.table)
 library(xgboost)
 library(caret)
