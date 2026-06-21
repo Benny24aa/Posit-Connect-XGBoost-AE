@@ -593,14 +593,20 @@ file.path(
 
 }
 
+```
 
+## Downloads
+
+```{r, results='asis'}
 files <- list.files(
   "Databricks/ae outputs",
   pattern = "\\.xlsx$",
   full.names = FALSE
 )
 
-for(f in files){
+cat("The following files were generated:\n\n")
+
+for (f in files) {
   cat(sprintf("- [%s](Databricks/ae outputs/%s)\n", f, f))
 }
 ```
