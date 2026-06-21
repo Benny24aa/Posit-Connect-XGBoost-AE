@@ -592,4 +592,15 @@ file.path(
 )
 
 }
+
+
+files <- list.files(
+  "Databricks/ae outputs",
+  pattern = "\\.xlsx$",
+  full.names = FALSE
+)
+
+for(f in files){
+  cat(sprintf("- [%s](Databricks/ae outputs/%s)\n", f, f))
+}
 ```
